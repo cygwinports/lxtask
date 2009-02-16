@@ -1,0 +1,13 @@
+--- origsrc/lxtask-0.1/src/xfce-taskmanager-linux.c	2008-04-28 13:54:45.000000000 -0500
++++ src/lxtask-0.1/src/xfce-taskmanager-linux.c	2009-02-15 16:35:59.156250000 -0600
+@@ -109,6 +109,10 @@ struct task get_task_details(gint pid)
+             task.old_time = task.time;
+             task.time_percentage = 0;
+             task.size = task.size / 1024;
++#ifdef __CYGWIN__
++            task.rss = task.rss * 4;
++            task.time = task.time / 10;
++#endif
+         }
+         task.uid = status.st_uid;
+         passwdp = getpwuid(task.uid);

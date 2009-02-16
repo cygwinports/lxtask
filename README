@@ -1,0 +1,89 @@
+lxtask
+------------------------------------------
+A lightweight and desktop-independent task manager derived from 
+xfce4-taskmanager with all dependencies on xfce removed, new features, 
+and some improvement of the user interface.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
+  libintl8-0.17-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.24.0-1
+  intltool-0.40.5-1
+  libtool-2.2.6a-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://lxde.org/
+
+Canonical download:
+  http://downloads.sourceforge.net/lxde/
+
+-------------------------------------------
+
+Build instructions:
+  unpack lxtask-0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lxtask-0.1-X.cygport all
+
+This will create:
+  /usr/src/lxtask-0.1-X-src.tar.bz2
+  /usr/src/lxtask-0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/lxtask.exe
+  /usr/share/applications/lxtask.desktop
+  /usr/share/doc/lxtask-0.1/AUTHORS
+  /usr/share/doc/lxtask-0.1/COPYING
+  /usr/share/doc/lxtask-0.1/ChangeLog
+  /usr/share/doc/lxtask-0.1/INSTALL
+  /usr/share/doc/lxtask-0.1/README
+  /usr/share/doc/lxtask-0.1/TODO
+  /usr/share/locale/cs/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/de/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/el/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/eu/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/fi/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/fr/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/gl/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/hu/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/ja/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/lv/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/nb_NO/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/nl/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/pl/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/ru/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/ur/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/vi/LC_MESSAGES/lxtask.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/lxtask.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
