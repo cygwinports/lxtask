@@ -5,24 +5,25 @@ xfce4-taskmanager with all dependencies on xfce removed, new features,
 and some improvement of the user interface.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.3-1
+  libintl8-0.17-11
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-2
+  automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-13
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -50,12 +51,11 @@ Files included in the binary package:
 
   /usr/bin/lxtask.exe
   /usr/share/applications/lxtask.desktop
-  /usr/share/doc/lxtask-0.1/AUTHORS
-  /usr/share/doc/lxtask-0.1/COPYING
-  /usr/share/doc/lxtask-0.1/ChangeLog
-  /usr/share/doc/lxtask-0.1/INSTALL
-  /usr/share/doc/lxtask-0.1/README
-  /usr/share/doc/lxtask-0.1/TODO
+  /usr/share/doc/lxtask/AUTHORS
+  /usr/share/doc/lxtask/COPYING
+  /usr/share/doc/lxtask/ChangeLog
+  /usr/share/doc/lxtask/README
+  /usr/share/doc/lxtask/TODO
   /usr/share/locale/cs/LC_MESSAGES/lxtask.mo
   /usr/share/locale/de/LC_MESSAGES/lxtask.mo
   /usr/share/locale/el/LC_MESSAGES/lxtask.mo
@@ -81,8 +81,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.1-1 -----
-Initial release for Cygwin.
+----- version 0.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

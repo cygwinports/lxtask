@@ -1,3 +1,6 @@
+No, I don't understand why, but this makes the numbers match up with 
+those in Windows Task Manager.
+
 --- origsrc/lxtask-0.1/src/xfce-taskmanager-linux.c	2008-04-28 13:54:45.000000000 -0500
 +++ src/lxtask-0.1/src/xfce-taskmanager-linux.c	2009-02-15 16:35:59.156250000 -0600
 @@ -109,6 +109,10 @@ struct task get_task_details(gint pid)

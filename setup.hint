@@ -1,5 +1,5 @@
 category: System
-requires: libglib2.0_0 libgtk2.0_0 libintl8
+requires: libgcc1 libglib2.0_0 libgtk2.0_0 libintl8
 sdesc: "LXDE task manager"
 ldesc: "A lightweight and desktop-independent task manager derived from
 xfce4-taskmanager with all dependencies on xfce removed, new features,
