@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="lxtask"
-VERSION=0.1.4
+VERSION=0.1.6
 RELEASE=1
 CATEGORY="System"
 SUMMARY="LXDE task manager"
@@ -9,5 +9,5 @@ DESCRIPTION="A lightweight and desktop-independent task manager derived from
 xfce4-taskmanager with all dependencies on xfce removed, new features,
 and some improvement of the user interface."
 HOMEPAGE="http://lxde.org/"
-SRC_URI="mirror://sourceforge/lxde/${NAME}-${VERSION}.tar.gz"
-PATCH_URI="0.1.3-cygwin.patch"
+SRC_URI="mirror://sourceforge/lxde/${NAME}-${VERSION}.tar.xz"
+PATCH_URI="0.1.6-cygwin.patch"

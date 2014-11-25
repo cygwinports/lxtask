@@ -1,0 +1,32 @@
+--- origsrc/lxtask-0.1.6/src/main.c	2014-09-16 07:27:52.000000000 -0500
++++ src/lxtask-0.1.6/src/main.c	2014-11-25 12:57:24.627308600 -0600
+@@ -73,7 +73,7 @@ int main (int argc, char *argv[])
+ #endif
+     gtk_init (&argc, &argv);
+ 
+-    page_size=sysconf(_SC_PAGESIZE)>>10;
++    page_size=4096/*sysconf(_SC_PAGESIZE)*/>>10;
+     own_uid = getuid();
+ 
+     config_file = g_build_filename(g_get_user_config_dir(), "lxtask.conf", NULL);
+--- origsrc/lxtask-0.1.6/src/types.h	2014-09-16 07:27:52.000000000 -0500
++++ src/lxtask-0.1.6/src/types.h	2014-11-25 12:56:51.501102100 -0600
+@@ -22,6 +22,7 @@
+ 
+ #include <gtk/gtk.h>
+ 
++#undef PAGE_SIZE
+ #define REFRESH_INTERVAL 1000
+ 
+ struct task
+--- origsrc/lxtask-0.1.6/src/xfce-taskmanager-linux.c	2014-10-19 13:57:15.000000000 -0500
++++ src/lxtask-0.1.6/src/xfce-taskmanager-linux.c	2014-11-25 12:56:51.507102900 -0600
+@@ -164,7 +164,7 @@ void get_task_details(pid_t pid,struct t
+                         line,      // priority (nice value + fifteen)
+                         &task->prio // nice range from 19 to -19    /* my change */
+                     );
+-		task->time = stime + utime;
++		task->time = (stime + utime) / 10;
+ 		task->old_time = task->time;
+ 		task->time_percentage = 0;
+ 		task->ppid = ppid;
